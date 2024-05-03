@@ -7,11 +7,12 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
+      
         <title>Consultar CEP</title>
         
-        <link rel="stylesheet" href="css/estilo.css">
+     
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
         <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -61,8 +62,70 @@
 
             <div class="row">
                 <div class="col-sm-12">
+                    <label>Nome</label>
+                    <input type="text" id="nome"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Documento</label>
+                    <input type="text" id="documento"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Celular</label>
+                    <input type="text" id="celular"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Numero</label>
+                    <input type="text" id="numero"/>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Bairro</label>
+                    <input type="text" id="bairro"/>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Cidade</label>
+                    <input type="text" id="cidade"/>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Estado</label>
+                    <input type="text" id="estado"/>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12">
                     <button id="botao" class="btn btn-primary">
                         Consultar
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-success" onclick=" enviar()">
+                    Salvar dados
                     </button>
                 </div>
             </div>
@@ -72,5 +135,6 @@
 
        <script src="js/bootstrap.bundle.js"></script>
        <script src="js/index.js"></script>
+       <script src="js/cadastrocliente.js"></script>
     </body>
 </html>
