@@ -16,9 +16,9 @@ function lerclientes()
             let celulaNome = document.createElement("td")
             let celularCelular =  document.createElement("td")
             celulaNome.innerHTML = valor.nome
-            celularCelular.innerHTML = valor.celularCelular
+            celularCelular.innerHTML = valor.celular
             novalinha.append(celulaNome)
-            novalinha.append(celulaCelular)
+            novalinha.append(celularCelular)
             corpotabela.append(novalinha)
         });
 
