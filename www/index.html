@@ -2,10 +2,13 @@
 
 <html>
     <head>
+
+       
+
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="color-scheme" content="light dark">
       
         <title>Consultar CEP</title>
@@ -13,9 +16,14 @@
      
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
     </head>
     <body>
-        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Consultar CEP</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +32,15 @@
                
               </div>
             </div>
-          </nav>
+          </nav> -->
+
+          
+    <div data-role="page1" id="pag1">
+        <div data-role="header">
+            <h1>Pagina1 </h1>
+        </div>
+
+        <div role="main" class="ui-content"></div>
             <div class="row">
                 <div class="col-sm-12">
                     <label>Cep</label>
@@ -111,16 +127,6 @@
                     <input type="text" id="estado"/>
                 </div>
             </div>
-
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <button id="botao" class="btn btn-primary">
-                        Consultar
-                    </button>
-                </div>
-            </div>
-
             
             <div class="row">
                 <div class="col-sm-12">
@@ -130,7 +136,20 @@
                 </div>
             </div>
 
+           
+                <a href="#pag2" class="uri btn">Ir para Página 2 </a>
+           
+        
+        </div>
+
                  
+    <div data-role="page" id="pag2">
+        <div data-role="header">
+            <h1>Pagina2 </h1>
+        </div>
+    
+
+        <div role="main" class="ui-content">
             <div class="row">
                 <div class="col-sm-12">
                     <button class="btn btn-warnig" onclick=" lerclientes()">
@@ -139,6 +158,7 @@
                 </div>
             </div>
 
+            
             <table class="table">
                 <thead> 
                     <tr>
@@ -149,20 +169,15 @@
                 <tbody id="corpotabela"></tbody>
 
             </table>
+
+            <a href="#pag1" class="uri btn">Voltar</a>
+           
+
+        </div>
+    </div>  
+        
             
-
-            <button class="btn btn-danger" onclick="salvarLocal('Nome','Joaquim')">
-            Cadastrar no LocalStoreage
-            </button>
-
-            <br/>
-
-            <button class="btn btn-warning" onclick="lerLocal()">
-            Ler Storage
-            </button>
-
-            
-            
+        
 
        <script src="js/bootstrap.bundle.js"></script>
        <script src="js/index.js"></script>
