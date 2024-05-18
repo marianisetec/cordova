@@ -23,4 +23,3 @@ function ConsultaCep() {
      
 }
 let botao = document.querySelector("#botao");
-botao.addEventListener("click", ConsultaCep);

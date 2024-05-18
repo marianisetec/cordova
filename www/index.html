@@ -35,9 +35,10 @@
           </nav> -->
 
           
-    <div data-role="page1" id="pag1">
+    <div data-role="page" id="pag1"> 
+
         <div data-role="header">
-            <h1>Pagina1 </h1>
+            <h1>Pagina 1 </h1>
         </div>
 
         <div role="main" class="ui-content"></div>
@@ -134,18 +135,15 @@
                     Salvar dados
                     </button>
                 </div>
+                <a href="#pag2" class="uri btn">Ir para Página 2 </a>
             </div>
 
-           
-                <a href="#pag2" class="uri btn">Ir para Página 2 </a>
-           
-        
         </div>
 
                  
     <div data-role="page" id="pag2">
         <div data-role="header">
-            <h1>Pagina2 </h1>
+            <h1>Pagina 2 </h1>
         </div>
     
 
@@ -170,12 +168,48 @@
 
             </table>
 
-            <a href="#pag1" class="uri btn">Voltar</a>
+            <a href="#pag1" class="uri btn">Voltar para a página 1</a>
+            <br>
+            <a href="#pag3" class="uri btn">Ir para a página 3</a>
            
-
+            
         </div>
     </div>  
         
+    <div data-role="page" id="pag3">
+        <div data-role="header">
+            <h1>Pagina 3 </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <label>Login</label>
+                <input type="text" id="login"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <label>Senha</label>
+                <input type="password" id="senha"/>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-warnig" onclick=" ">
+                    Logar
+                    </button>
+                </div>
+            </div>
+
+            
+            <a href="#pag1" class="uri btn">Voltar para a página 1</a>
+            <br>
+            <a href="#pag2" class="uri btn">Voltar para a página 2</a>
+    </div>
+
+    
             
         
 
